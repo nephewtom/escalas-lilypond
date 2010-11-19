@@ -3,12 +3,13 @@
 
 doMayor = \relative do'{
   do4-1 re-2 mi-3 fa-1 sol-2 la-3 si-4 do-1 re-2 mi-3 fa-1 sol-2 la-3 si-4 do-5
-  si-4 la-3 sol-2 fa-1 mi-3 re-2 do-1 si-4 la-3 sol-2 fa-1 mi-3 re-2 do-1
+  si-4 la-3 sol-2 fa-1 mi-3 re-2 do-1 si-4 la-3 sol-2 fa-1 mi-3 re-2 do2-1 r
 }
 
-reMayor = \relative do'{
+solMayor = \relative do'{
   \key sol \major
-  do4 re mi fas sol la si do re mi fas sol la si do2
+  sol4-1 la-2 si-3 do-1 re-2 mi-3 fas-4 sol-1 la-2 si-3 do-1 re-2 mi-3 fas-4 sol-5
+  fas-4 mi-3 re-2 do-1 si-3 la-2 sol-1 fas-4 mi-3 re-2 do-1 si-3 la-2 sol2-1 r
 }
 
 \book {
@@ -19,7 +20,7 @@ reMayor = \relative do'{
   }
   
   \score {
-    \reMayor
+    \solMayor
     \header { piece = "Escala de Sol Mayor" }
   }
 }
